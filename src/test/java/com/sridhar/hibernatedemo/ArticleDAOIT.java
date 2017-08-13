@@ -24,7 +24,7 @@ import java.util.Date;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = HibernateDemoApplication.class)
 @EntityScan(basePackages = "com.sridhar")
 @ContextConfiguration
 public class ArticleDAOIT {

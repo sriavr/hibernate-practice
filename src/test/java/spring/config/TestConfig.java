@@ -5,14 +5,16 @@ import com.sridhar.db.dao.FlightDAO;
 import com.sridhar.model.*;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Primary;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.sridhar")
 public class TestConfig {
 
+    @Primary
     @Bean
     public ArticleDAO articleService(){
        return new ArticleDAO() {

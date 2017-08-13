@@ -19,10 +19,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = HibernateDemoApplication.class)
 @EntityScan(basePackages = "com.sridhar")
 @ContextConfiguration
-public class FlightDAOTest {
+public class FlightDAOWithStaticConfigTest {
 
     private FlightDAO flightDAO;
 
