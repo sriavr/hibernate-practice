@@ -1,0 +1,18 @@
+spring:
+  main:
+    banner-mode: off
+  application:
+    name: Hibernate Demo
+  datasource:
+      driverClassName: com.mysql.jdbc.Driver
+      name: testdb
+      url: jdbc:mysql://localhost:3306/test
+      username: root
+      password: rama123
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQLDialect
+      ddlAuto: create
+
+server:
+  port: 9000
