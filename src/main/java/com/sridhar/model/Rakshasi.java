@@ -8,8 +8,8 @@ import javax.persistence.*;
 Single table per class hierarchy strategy: a single table hosts all the instances of a class hierarchy
  */
 @Entity
-@DiscriminatorValue("Rākṣasī")
-public class Rākṣasī {
+@DiscriminatorValue("Rakshasi")
+public class Rakshasi {
 
     @Id
     @Column
@@ -17,17 +17,17 @@ public class Rākṣasī {
     private Long id;
 
     @Column
-    private String ghāta;
+    private String ghata;
 
     @Column
     private String nama;
 
     public String getGhāta() {
-        return ghāta;
+        return ghata;
     }
 
     public void setGhāta(String ghāta) {
-        this.ghāta = ghāta;
+        this.ghata = ghāta;
     }
 
     public String getNama() {

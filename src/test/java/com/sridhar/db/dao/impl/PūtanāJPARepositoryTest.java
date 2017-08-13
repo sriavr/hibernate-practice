@@ -1,7 +1,6 @@
 package com.sridhar.db.dao.impl;
 
 import com.sridhar.hibernatedemo.HibernateDemoApplication;
-import com.sridhar.model.Pūtanā;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

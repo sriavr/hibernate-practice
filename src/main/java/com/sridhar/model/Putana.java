@@ -8,9 +8,9 @@ Single table per class hierarchy strategy: a single table hosts all the instance
  */
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @Entity
-@DiscriminatorColumn(name ="RākṣasīType", discriminatorType = DiscriminatorType.STRING)
-@DiscriminatorValue("Pūtanā")
-public class Pūtanā extends Rākṣasī{
+@DiscriminatorColumn(name ="RakshasiType", discriminatorType = DiscriminatorType.STRING)
+@DiscriminatorValue("Putana")
+public class Putana extends Rakshasi{
 
     @Column
     private String phalaShruthi;
